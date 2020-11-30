@@ -43,7 +43,7 @@ th, td {
   <div class="menu">
      <ul>
         <li>Home</li>
-        <li>Add</li>
+        <li><a href="add.php">Add </a></li>
         <li>Delete</li>
      </ul>
   </div>
@@ -74,6 +74,9 @@ th, td {
                   <td><?php echo $row['sclass'] ?></td>
                   <td><?php echo $row['sphone'] ?></td>
                   <td><?php echo $row['cname'] ?></td>
+                    <td><a href="edit.php?id=<?php echo $row['sid'] ?>">Edit</a></td>
+                      <td><a href="">Delete</a></td>
+
                 </tr>
                 <?php } ?>
             </tbody>
